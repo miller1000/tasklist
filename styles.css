@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding-left: 0;
+    display: inline-block;
+}
+
+li {
+    flex: 0 0 210px;
+    list-style-type: none;
+    text-wrap: wrap;
+    width: 210px;
+}
+
+.text-field, .text-field:disabled {
+    border: none;
+    color: black;
+    font-size: 1rem;
+    resize: none;
+}
+
+.remove-button {
+    background-color: rgba(255, 94, 0, 0.705);
+    transition-duration: 0.2s;
+    color: whitesmoke;
+    font-weight: bold;
+    height: 2em;
+    border: 0 none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 4px;
+}
+
+.remove-button:hover {
+    background-color: rgb(255, 94, 0);  
+}
+
+.remove-button:active { 
+    transform: scale(0.95); 
+} 
+
+.edit-button {
+    background-color: rgba(0, 112, 216, 0.705);
+    transition-duration: 0.2s;
+    color: whitesmoke;
+    font-weight: bold;
+    height: 2em;
+    border: 0 none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 4px;
+}
+
+.edit-button:hover {
+    background-color: rgb(0, 112, 216);  
+}
+
+.edit-button:active { 
+    transform: scale(0.95); 
+} 
+
+#task {
+    border-color: rgb(118, 126, 105);
+    font-size: 1rem;
+}
+
+#submit {
+    background-color: rgb(118, 126, 105);
+    color: whitesmoke;
+    font-weight: bold;
+    height: 2em;
+    border: 0 none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 4px;
+}
+
+#submit:active { 
+    transform: scale(0.95); 
+}
+#submit:disabled { 
+    background-color: rgba(118, 126, 105, 0.521);
+    transform: scale(1); 
+} 
+
+div {
+    border-radius: 2px;
+    display: flex;
+    gap: 10px;
+    border-width: 1px 2px;
+    border-color: rgba(118, 126, 105, 0.507);
+    border-style: solid;
+    padding: 10px 5px 10px 8px;
+}
