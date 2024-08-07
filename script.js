@@ -103,6 +103,10 @@ function editTask(taskID) {
             element.disabled = false;
         })
 
+        if (document.querySelector('#task').value.length === 0) {
+            document.querySelector('#submit').disabled = true;
+        }
+
     } else {
         document.getElementById(`Edit-${taskID}`).textContent = "Done";
 
